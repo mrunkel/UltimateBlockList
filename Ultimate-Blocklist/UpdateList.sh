@@ -149,6 +149,7 @@ fi
 
 mv "$tmp_list" "$LIST"
 tmp_list=""
+chmod 644 "$LIST"
 
 wc -l "$LIST" || die "Cannot count lines"
 
